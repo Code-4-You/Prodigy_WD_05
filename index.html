@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="icon" href="images/favicon.webp">
+</head>
+<body>
+<div id="main">
+
+    <h1 id="head">Weather App</h1>
+
+     <!-- Search Box -->
+
+    <div class="search-box">
+       
+        <input id="input" class="input-box" type="text" placeholder="Enter Your Location" required >
+       
+       <button id="search-btn"  class=" fa-solid fa-magnifying-glass searchBtn"></button>
+    </div>
+
+    <!-- Weather Card -->
+
+    <div class="location-not-found">
+        <h1>Sorry, location not found</h1>
+        <img src="images/404.png" alt="">
+    </div>
+     
+     <div class="weather-body">
+
+    <div id="weather">
+        <div id="weatherinfo">
+            <img class="weather-img" src="images/cloud.png" alt="">
+        </div>
+        <p class="temp">0 <sup>°C</sup></p>
+        <p class="condition description">Light Rain</p>
+    </div>
+
+    <!-- Weather Condition--> 
+
+    <div id="condition">
+        <div id="condition1">
+            <i id="fa1" class="fas fa-tint"></i>
+            <div id="con">
+                <p>
+                   <span id="humidity"> 45% </span> 
+                    <br>
+                    Humidity
+                </p>
+            </div>
+        </div>
+
+        <div id="condition2">
+            <i id="fa2" class="fas fa-wind"></i>
+            <div id="con">
+                <p>
+                   <span id="wind-speed"> 12Km/H </span> 
+                    <br>
+                  Wind Speed
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+ </div>
+   <script src="script.js"></script> 
+</body>
+</html>

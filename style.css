@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif; ;
+}
+body{
+    background-color: rgb(205, 195, 195);
+}
+#head{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+/* --------------------Search Box------------- */
+
+.search-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.search-box #input{
+    margin-right: 10px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+#search-btn{
+    height: 25px;
+    width: 30px;
+    border-radius: 20px;
+}
+
+/* ----------------------------Weather Card------ */
+
+#weather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#weatherinfo img{
+    width: 300px;
+    margin-bottom: 5px;
+}
+.temp {
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.condition{
+    font-size: 30px;
+    font-weight: bold;
+}
+/* ---------------------Current Weather---------------*/
+#condition{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+#condition1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding-bottom: 20px;
+}
+
+#condition2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#condition i{
+    width: 30px;
+    font-weight: bold;
+    
+}
+
+#condition p{
+    font-size: 20px;
+    font-weight: bold;
+}
+#fa1,#fa2{
+  font-size: 30px; 
+  margin-right: 8px;
+}
+#fa1{
+margin-left: 40px;
+}
+
+#fa2{
+   padding-right: 30px;
+   margin-left: 50px;
+}
+
+#main{
+    border-radius: 30px;
+    background-color: bisque;
+    margin-inline: 70px;
+    background: rgba(255,228,196,.7);
+    margin-block: 50px;
+    border: 2px solid black;
+    
+}
+
+.condition{
+    text-transform:capitalize;
+}
+
+.location-not-found img{
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.location-not-found{
+    margin-top: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.location-not-found h1{
+    font-size: 25px;
+}
+
+.weather-body{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
